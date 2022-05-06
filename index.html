@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sweep Stake NFT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Lexend&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/onepage-scroll/onepage-scroll.css">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/aos.css">
+	<script type="application/javascript" src="js/ethers.js"></script>
+    <script src="js/web3.js"></script>
+
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
+  </head>
+  <body>
+    <div class="navigation-sticky">
+			<span id="connect-wallet-button"onclick="connect()">CONNECT WALLET</span>
+        <ul id="social-media-menu">
+		
+          <li class="li-menu"> <a href="https://sweepstakenft.gitbook.io/"target="blank"><img class="socials-icon" src="img/socials/gitbook.svg"/></a></li>
+          <li class="li-menu"> <a href="https://twitter.com/sweepstakenft/" target="blank"><img class="socials-icon" src="img/socials/twitter.svg"/></a></li>
+          <li class="li-menu"> <a href="https://opensea.io/SweepStakeNFT" target="blank"><img class="socials-icon" src="img/socials/opensea.svg"/></a></li>
+          <li class="li-menu"> <a href="https://discord.gg/nHbuHMk4bC" target="blank"><img class="socials-icon" src="img/socials/discord.svg"/></a></li>
+		</ul>
+      </div>
+    </div>
+    <div class="main">
+      <section class="bg-cover bg-center hero bg-gray">
+        <div class="position-relative z-index-1">
+          <div class="container text-center text-white">
+            <h1 class="section-1 header-title">SWEEPSTAK<span id="ethereum-symbol">Ξ</span></h1>
+          </div>
+        </div>
+        <div class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></div>
+      </section>
+      <section>
+        <h1 style="text-align:center;" id="roadmap-title">THE ROADMAP</h1>
+          <div class="roadmap">
+            <ol class="roadmap-timeline js-roadmap-timeline">
+                <li id="roadmap-events-phase-1" class="roadmap-timeframe js-roadmap-timeframe section-2 section-odd">
+                  <div class="roadmap-date">PHASE 1</div>
+                  <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
+                  <ul class="roadmap-events roadmap-odd">
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>3000 SweepStakes Minted</li>
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>Discord accessible only for holder (after minted out)</li>
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>Community vote for our week 0 raffle (bonus week)</li>
+                  </ul>
+                </li>
+          
+                <li id="roadmap-events-phase-2" class="roadmap-timeframe js-roadmap-timeframe section-2 section-even">
+                  <div class="roadmap-date">PHASE 2</div>
+                  <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
+                  <ul class="roadmap-events">
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>Holders vote for weekly and monthly raffle</li>
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>Partnership with other potential projects to benefit holders</li>
+                  </ul>
+                </li>
+          
+                <li id="roadmap-events-phase-3" class="roadmap-timeframe js-roadmap-timeframe section-2 section-odd">
+                  <div class="roadmap-date">PHASE 3</div>
+                  <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
+                  <ul class="roadmap-events roadmap-odd">
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>Research and development on SweepStake utilities for future benefits for our exclusive holders</li>
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>Attaching more benefits for winners (most likely be a whitelist spot from project collaborations)</li>
+                  </ul>
+                </li>
+          
+                <li id="roadmap-events-phase-4" class="roadmap-timeframe js-roadmap-timeframe section-2 section-even">
+                  <div class="roadmap-date">PHASE 4</div>
+                  <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
+                  <ul class="roadmap-events">
+                    <li class="roadmap-event"><div class="roadmap-vline"></div>Potentially 2nd collection passes for holders with the same or lower supply. Individual SweeStake holders will gain exclusive access to the minting. This is tentative, as we want to pamper holders and entitle you with exclusivity.</li>
+                  </ul>
+                </li>                
+            </ol>
+        </div>
+      </section>
+      <section>  
+        <div class="d-flex h-100 align-items-center">
+          <div id="container-section-3" style="margin-top:10px;margin-bottom:0px;" class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-4 card-animate section-3">
+                <img class="card-products" src="img/Bronze.png">
+              </div>
+              <div class="col-lg-4 card-animate section-3">
+                <img class="card-products" src="img/Silver.png">
+              </div>
+              <div class="col-lg-4 card-animate section-3">
+                <img class="card-products" src="img/Gold.png">
+              </div>
+            </div>
+            <div class="row" id="section-3-title">
+              <div class="col-lg-6 col-6 col-md-6">
+                <h4 class="text-bold">PASSES TIER</h4>
+              </div>
+              <div class="col-lg-6 col-6">
+                  <h4 class="text-right text-bold">THE PRODUCT</h4>
+              </div>
+            </div>
+            <hr class="solid">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-6">
+                <h4 class="text-right text-bold" style="text-align:right;">2022-2023</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 text-product-description">
+                  <span>SweepStake is a collection of 3.000 raffle passes with 3 distinct tier (Bronze, Silver, Gold), each differentiated in the amount of entries upon weekly and monthly raffle. Owning a SweepStake grants you 1 year access to our weekly (54 weeks) and monthly (12 months) raffles without any entry required through website or discord. As an exclusive holder, you will be automatically entitled for the raffle of the NFTs and no longer have to check in Discord announcements on daily or weekly basis. Our team will publish winner of weekly and monthly raffle every Sunday.</span>
+              </div>
+              <div class="col-lg-6 text-product-description">
+                  <span >Starting off humbly, SweepStake aims to be one of the biggest raffle-based NFT or the community. SweepStake is not an investment mechanism or vehicle for individuals to profit by flipping it. It is meant for those who enjoy raffle giveaways, SweepStake offers something bigger, dynamic, and more interesting. SweepStake is made by the <span class="text-bold">COMMUNITY FOR THE COMMUNITY.</span></span>
+                  <div class="row" style="margin-top:12px;">
+                      <div class="col-lg-3 col-md-3">
+                          <span class="text-bold">!SWEEP</span>
+                      </div>
+                      <div id="more-details" class="col-lg-9 col-md-9">
+                          <span>Find more details about us <a href="https://sweepstakenft.gitbook.io/">HERE</a></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-gray">
+        <div class="d-flex h-100 align-items-center" style="padding-right:1vw;padding-left:1vw;">
+          <div class="container">
+            <div class="row">
+              <div id="text-mint-description-1" class="col-lg-12 section-4-text">
+                <span>There are a total of <span id="total_minted">1/3.000</span> SweepStake available to be minted. Each wallet can only mint 5 at max and each will cost you 0.088 Ξ, you have <span id="eth_balance">0</span> Ξ, in your wallet. Yes, I want to <a id="button-minting">MINT</a> 
+                <span style="margin-left:4px;margin-right:4px;padding-right:2px;padding-left:2px;">
+                  <i id="btn-minus" class="fa fa-minus button-add-minus"></i>
+                  <input id="input-minting-number"  value="1" type="number" maxlength="1" style="text-align:center;"  onchange="CheckValue()"/>
+                  <i id="btn-plus" class="fa fa-plus button-add-minus"></i>
+                </span>
+                now.</h3>
+              </div>
+              <div id="text-mint-description-2" class="col-lg-12 section-4-text">
+                <span>SweepStake holders are eligible for weekly and monthly raffle for 1 year without any registration required. Once you minted yours, head to our Discord server and verify your asset to get the latest announcements!</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/front.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
